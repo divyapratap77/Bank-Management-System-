@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style_register.css">
+<link rel="stylesheet" type="text/css" href="sideimage.css">
+<title>register your account</title>
+<style>
+        .form1
+        {
+           
+            text-align:left;
+            letter-spacing:0px;
+            background-color: #4A707e;
+             border-radius: 10px;
+            opacity:2;
+            height: 725px;
+            width:400px;
+            border:0.5px solid black;
+           box-shadow: 3.5px 3.5px 3.5px 3.5px #888888;
+        }
+        .close
+        {
+            height: 25px;
+            width: 25px;    
+            font-family: arial black;
+            float: right;
+            margin-top: 8px;
+            margin-right: 8px;
+            padding-left: 2px;;
+    
+        }
+    
+       .container
+       {
+            opacity:0.6;
+            float:right;
+            margin-right:600px;
+        }
+        .container:hover 
+        {
+            opacity:1;
+        }
+      
+        .a
+        {
+            border: 1px solid black;
+            height: 20px;
+            width: 200px;
+            margin-left: 90px;
+            position:right;
+            box-shadow: 2px 2px 2px grey;
+            margin-right: 4px;
+            padding: 5px;
+            padding-left: 10px;
+            border-radius: 11px;    
+            
+        }
+      
+        #b
+        {
+            margin-left: 90px;
+            position:right;
+            width: 30px;
+            border:1px solid;
+            padding-top: 5.5px;
+            padding-left: 2px;
+            padding-bottom: 6.75px;
+            background-color: gainsboro;
+            box-shadow: 2px 2px 2px grey;
+            display: inline-block;
+            border-bottom-left-radius: 11px;
+            border-top-left-radius:11px; 
+            border-right:0px;
+        }
+      #c
+        {
+            height: 20px;
+            width: 165px;
+            box-shadow: 2px 2px 2px grey;
+            padding: 5px;
+            padding-left: 10px;
+            border-top-right-radius:11px;
+            border-bottom-right-radius:11px;
+            border: 1px solid black;
+        }
+        body
+        {
+            margin-top: 0px;
+            letter-spacing: normal;
+            padding-bottom: 0px;
+            background-image: url("bank.jpg")
+        }
+    p
+    {
+        margin-left: 110px;
+        font-size: 15px;
+        padding:0px;
+        line-height:0; 
+        opacity: 0.5;
+    
+    }
+    #close
+    {  
+        text-decoration: none;
+        text-shadow: 2px 2px 5px black;
+    }
+    .submit
+    {
+        height:40px;
+        width: 65px;
+        border-radius: 11px;
+        border:1px black solid;
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 17px;
+    }
+
+        
+</style>
+</head>
+<body><h1> <img src="banklogo.png" height="100px" width="140px" alt="logo"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   Welcome To DKG Bank   </h1>
+<hr>
+<div class='top'>
+<a id="l"href="aboutus.html">About us</a>
+<a id="l"href="index.html">Home</a>
+<input type="search" name="search" placeholder="Search.." align="right" action="">
+<a id="r" href="login.html">Login</a>
+<a id="r" href="register.html">Register</a>
+</div>
+<hr>
+<div>
+<marquee>Central To you Since 1911, Build A Better Life Around Us</marquee>
+</div>
+ <div class="sideimage1">
+     <img src="Facebook.png">
+ </div>
+ <div class="sideimage2">
+     <img src="MobileBanking.png">
+ </div>
+ <div class="sideimage3">
+     <img src="InternetBanking.png">
+ </div>
+ <div class="sideimage4">
+     <img src="AtmBanking.png">
+ </div>
+  <br><br>
+  <div class="container">
+   <img src="register.png" height="100px">
+    </div>
+    <br><br><br><br><br><br><br>
+    <center>
+     <div class="form1">
+      <div class="close"><a href="index.html" id="close">&#10060</a></div><br><br>
+       <form name="registration" action="#">
+        <p>First Name</p> 
+        <input type="text" class="a" placeholder="First Name" name="fname"><br><br>
+           <p>Middle Name</p> 
+        <input type="text" class="a" placeholder="Middle Name" name="mname"><br><br>
+           <p>Last Name </p>
+        <input type="text" class="a" placeholder="Last Name" name="lname"><br><br>
+           <p>Account Number </p>
+        <input type="tel" class="a" placeholder="1234567891011" mane="accno"><br><br>
+           <p>Email Id </p>
+        <input type="text" class="a" placeholder="xyz@abc.com" name="email"><br><br>
+           <p>Password</p>
+        <input type="password" class="a" placeholder="••••••••" name="passwd"><br><br>
+           <p>Re-type Password</p>
+        <input type="password" class="a" placeholder="••••••••" name="repasswd"><br><br>
+           <p>Mobile Number</p>
+        <div><div id="b" >+91</div><input type="tel" placeholder="9634440000" id="c" name="num"></div><br>
+        <center>
+        <input type="button" class="submit" value="submit" onclick="submit1()">
+        <script>
+                function submit()
+                {   
+                    var a1=0,a2=0,a3=0,a4=0,a5=0;
+                    var a = document.registration.fname.value;
+                    if(a=="")
+                    {
+                        //alert("Please Enter Your First Name");
+                        //document.form.fname.focus();
+                        a1=1;
+                    }
+                    if(!isNaN(a))
+                    {
+                        //alert("Please Enter Only Characters in First Name");
+                        //document.form.fname.select();
+                        a1=1;
+                    }
+                    var b = document.registration.mname.value;
+                    if(!isNaN(b))
+                    {
+                        //alert("Please Enter Only Characters in Middle Name");
+                        //document.form.mname.select();
+                        //return false;
+                        a2=1;
+                        
+                    }
+                    var c = document.registration.lname.value;
+                    if(!isNaN(a))
+                    {
+                        //alert("Please Enter Only Characters in Last Name");
+                        //document.form.lname.select();
+                        //return false;
+                        a3=1;
+                    }
+                    
+                    {
+		
+                        alert("account registered successfully");
+                        location="login.html";
+                    }
+                }
+        </script>
+        <input type="reset" class="submit" value="reset" >
+        </center>
+        </form>
+    </div>
+    </center>
+</body>
+</html>

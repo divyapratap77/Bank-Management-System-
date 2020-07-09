@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<head> 
+ <title>Forms</title>
+ <link rel="stylesheet" type="text/css" href="style.css">
+ 
+ <style>
+.sidenav 
+       {
+    margin-top: 75px;
+    height:230px;
+    width: 150px;
+    position: absolute;
+    z-index: 1;
+    top: 50;
+    left: 0;
+    background-color:#4A707e;
+    overflow-x: hidden;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+     .container
+       {
+      border: .5px solid black;
+           padding: 3px;
+           width: 450px;
+           height:410px;   
+           margin: auto;
+           box-shadow: 3.5px 3.5px 3.5px #888888;
+           backface-visibility: visible;
+           text-align: center;
+           background-color:#4A707e;
+        border-radius: 10px;
+        }
+     #abc
+       {
+            border: 1px solid black;
+            height: 20px;
+            width: 200px;
+            margin-left: 30px;
+            
+            box-shadow: 2px 2px 2px grey;
+            margin-right: 4px;
+            padding: 5px;
+            padding-left: 10px;
+            border-radius: 11px;
+       }
+     .b
+       {
+           height:40px;
+        width: 65px;
+        border-radius: 11px;
+        border:1px black solid;
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 17px;
+       }
+
+.sidenav a {
+    padding: 6px 6px 6px 6px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: brown;
+}
+           .card
+       {
+            opacity:0.6;
+           
+            margin-left:575px;
+           position: absolute;
+        }
+        .card:hover 
+        {
+            opacity:1;
+        }
+       .card:hover img
+    {
+        height:75%;
+        width:75%;
+        
+        box-shadow:2px 2px 2px 2px #888;
+        margin-left:-10px;
+        margin-top:-10px;
+       
+    }
+    </style>
+</head>
+ <body>
+<h1> 
+<img src="banklogo.png" height="100px" width="140px" alt="logo"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   Welcome To DKG Bank   
+</h1>
+ <hr>
+<div class='top'>
+<a id="l"href="afteraboutus.html">About us</a>
+<a id="l"href="afterindex.html">Home</a>
+<input type="search" name="search" placeholder="Search.." align="right" action="">
+<a id="r" href="index.html">Logout</a>
+</div>
+<hr>
+<div>
+<marquee>Central To you Since 1911, Build A Better Life Around Us</marquee>
+</div>
+<div class="sidenav">
+  <a href="afteraboutus.html">About us</a>
+  <a href="debit.html">Debit Card Transfer</a>
+  <a href="fund.html">Account to Account Transfer</a>
+</div><br>
+ <div class="card">
+   <img src="NEFT-rtgs-imps1.jpg" height="100px">
+    </div>
+<br><br><br><br><br><br><br><br>
+<div class="container">
+<form>  
+<legend>
+<br> 
+ Transfer Details: 
+</legend>
+ <br>
+  <br/>
+  <input id="abc" type="text" name="name"  size="30" maxlength="100" placeholder="Name">   
+
+  <br />  
+  
+  <br />  
+  <br/><input id="abc" type="text" name="amount" size="30" maxlength="100" placeholder="Amount"> 
+ 
+  <br />  
+ <br/>
+<br/> <input id="abc" type="number" border="2px" size="12" maxlength="15" placeholder="  Account Number">
+<br />
+  <br />  
+<br/> <input id="abc" type="number" size="12" maxlength="15" placeholder="IFSC code">
+  <br />  <br />  
+ <input type="submit" class="b" value="submit" placeholder="submit">
+
+</form>
+  </div>
+  
+	 <footer>  
+	 &copy; 2011 DKG BANK  </footer>
+  </body>
+
+
+
+

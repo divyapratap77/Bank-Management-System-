@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>form</title>
+    <script>
+    function confirm()
+        {
+            var pwd=document.form.passwd.value;
+            var cpwd=document.form.confpasswd.value;
+            if( pwd==cpwd)
+                {
+                    alert("password matched");
+                }
+            else
+                {
+                    alert("password didn't matched");
+                }
+        }
+    </script>
+</head>
+<body>
+    <form >
+        <label>password</label><input type="password" name="passwd"><br />
+        <label>confirm password</label><input type="password" name="confpasswd"><br />
+        <input type="button" onclick="confirm()" value="confirm">
+    </form>
+</body>
+</html>
